@@ -1,0 +1,192 @@
+.hero-container {
+  margin-bottom: 7em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-info,
+.hero-banner {
+  width: 50%;
+}
+
+.hero-info-top {
+  margin-bottom: 1em;
+}
+
+.hero-info-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-info-review {
+  border: 2px dashed var(--secondary-color);
+  border-radius: 6px;
+  margin-right: 5em;
+  padding: 0.7em;
+  min-width: 12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-info-review-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stars {
+  margin-top: 0.5em;
+}
+
+.hero-info-review-top h1 {
+  color: var(--primary-color);
+}
+
+.hero-info-review-bottom p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+/* ------------ Hero Banner ------------ */
+
+.hero-banner .hero-nike {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-banner img {
+  /* border: 3px solid red; */
+  margin-top: 5em;
+  width: 40vw;
+  height: auto;
+  transform: rotateZ(-35deg);
+}
+
+.hero-banner h1 {
+  position: absolute;
+  font-size: 17rem;
+  top: 0;
+  z-index: -1;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff5;
+}
+
+.hero-glass {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .hero-glass::before, .hero-glass::after{
+  content: '';
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  background-color: red;
+} */
+
+
+
+
+
+
+
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media (max-width: 1240px) {
+  .hero-info-top .heading {
+    font-size: 6rem;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+  .hero-info,
+  .hero-banner {
+    width: 100%;
+  }
+
+  .hero-banner {
+    margin-bottom: 6em;
+  }
+
+  .hero-info-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .primary-button {
+    margin-bottom: 2em;
+  }
+
+  .hero-info-bottom {
+    margin-right: 3em;
+  }
+
+  .hero-info-review h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-info-review p {
+    font-size: 1rem;
+  }
+  .hero-info-review {
+    margin: 0;
+  }
+  .hero-banner img {
+    width: 30em;
+    margin-top: 1em;
+  }
+
+  .hero-glass h3 {
+    font-size: 1rem;
+  }
+
+  .hero-glass p{
+    font-size: .7rem;
+  }
+
+  .hero-glass div {
+    max-width: 13em;
+  }
+}
+
+
+
+@media (max-width: 1080px) {
+  .hero-info-top {
+    display: block;
+  }
+  .hero-info-bottom {
+    margin-right: 0;
+  }
+  .hero-banner {
+    margin-bottom: 5em;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .hero-info-top .heading {
+    font-size: 3.7rem;
+  }
+
+  .hero-info-bottom {
+    justify-content: flex-end;
+  }
+
+  .hero-banner h1 {
+    font-size: 9.5rem;
+  }
+
+  .hero-banner img {
+    width: 18em;
+    margin-top: 0;
+  }
+}

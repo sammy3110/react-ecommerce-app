@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #fd6452;
+  --primary-color-light: #ff7b6c;
+  --secondary-color: #4e99f6;
+  --secondary-color-light: #4e99f66c;
+  --black-color: #0d0d0d;
+
+  --primary-font: 'Rajdhani', cursive;
+  --secondary-font: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body {
+  background-color: var(--black-color);
+  color:aliceblue;
+}
+
+.container {
+  margin-bottom: 3em;
+}
+
+@media (max-width: 840px) {
+  .primary-button {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .primary-button {
+    font-size: 0.7rem !important;
+  }
+}
