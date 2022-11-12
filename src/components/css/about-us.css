@@ -1,0 +1,143 @@
+.about-us-container {
+  margin-bottom: 7em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-banner,
+.about-us-info {
+  width: 50%;
+}
+
+.about-us-banner {
+  position: relative;
+}
+
+.sub-heading {
+  margin-bottom: 0.5em;
+}
+
+.about-us-banner .about-us-nike {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-banner img {
+  margin-top: 5em;
+  width: 35vw;
+  height: auto;
+  transform: rotateZ(20deg);
+}
+
+.about-us-background {
+  position: absolute;
+  top: 0;
+  left: 10em;
+
+  height: 25em;
+  width: 20em;
+
+  border-radius: 20px;
+  background: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+
+  z-index: -1;
+}
+
+.about-us-glass {
+  position: absolute;
+  top: -2em;
+  right: 4em;
+}
+
+/* .about-us-nike img {
+  transform: rotateZ(20deg);
+} */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media (max-width: 1160px) {
+  .about-us-container {
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  .about-us-banner,
+  .about-us-info {
+    width: 100%;
+  }
+
+  .about-us-info {
+    display: flex;
+  }
+
+  .about-us-banner {
+    margin-bottom: 7em;
+  }
+
+  .about-us-banner img {
+    width: 500px;
+  }
+
+  .about-us-background {
+    left: 12em;
+  }
+
+  .about-us-glass {
+    right: 14em;
+  }
+}
+
+@media (max-width: 660px) {
+    
+  .about-us-info {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-us-banner {
+    margin-bottom: 8em;
+  }
+  .about-us-banner img {
+    width: 400px;
+  }
+  .about-us-glass {
+    right: 1em;
+  }
+  .about-us-background {
+    left: 4em;
+  }
+  .about-us-info .heading {
+    font-size: 3.5rem;
+  }
+  .about-us-side {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-us-banner {
+    margin-bottom: 8em;
+  }
+  .about-us-banner img {
+    width: 300px;
+  }
+  .about-us-glass {
+    font-size: .8rem;
+    right: 0;
+  }
+  .about-us-background {
+    position: absolute;
+    top: 0;
+    left: 1em;
+
+    height: 20em;
+    width: 15em;
+  }
+}

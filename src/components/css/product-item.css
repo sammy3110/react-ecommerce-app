@@ -1,15 +1,119 @@
-
 .product-item-container {
-    border: 2px solid magenta;
-    max-width: 20em;
+  border: 1px solid #fff8;
+  margin-bottom: 1em;
+  border-radius: 6px;
+  max-width: 20em;
+  min-height: 23em;
 }
 
-.product-item-image img {
-    background: linear-gradient(to right, var(--secondary-color-light), var(--primary-color-light));
-    width: 20em;
+.item-image {
+  background-color: #fff2;
+
+  padding: 3em 2em 3em 1em;
+  max-width: 18em;
+  min-height: 14em;
+  border-radius: 6px 6px 0 0;
+}
+
+.item-image img {
+    width: 100%;
     height: auto;
+    transform: rotateZ(-20deg);
 }
 
-.info-rating, .info-price {
-    display: flex;
+.product-item-image {
+  position: relative;
 }
+
+.item-icon {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  height: 2.2em;
+  width: 2.2em;
+
+  border: 1px solid #fff;
+  padding: 0.4em;
+  border-radius: 50%;
+
+  background: linear-gradient(
+    to right,
+    var(--secondary-color-light),
+    var(--primary-color-light)
+  );
+}
+
+.item-icon:hover {
+  cursor: pointer;
+}
+
+.info-rating,
+.info-price {
+  display: flex;
+}
+
+.info-rating p{
+  margin-left: .5em;
+}
+
+.product-item-info {
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5em 2em 1em 2em;
+}
+
+.info-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-price h2 {
+  color: var(--primary-color);
+}
+
+.info-price button {
+  padding: 0.5em 0.6em;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+
+  transition-duration: 200ms;
+}
+
+.info-price button:hover {
+  cursor: pointer;
+  transform: translateX(3px);
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media (max-width: 670px) {
+  .info-rating {
+    font-size: .9rem;
+  }
+
+  .product-item-info h3 {
+    font-size: 1rem;
+  }
+
+  .info-price h2 {
+    font-size: 1.2rem;
+  }
+
+  .info-price button {
+    font-size: .75rem;
+  }
+
+  .product-item-info {
+    padding: 1em 2em;
+  }
+}
+
+
+
+
+
+

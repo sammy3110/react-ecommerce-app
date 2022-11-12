@@ -1,0 +1,149 @@
+.product-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-details-container .sub-heading {
+  margin-bottom: 1em;
+}
+
+.product-details-info .product-details-card {
+  width: 45%;
+}
+
+.info-badge-wrapper {
+  margin-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.badge-info {
+  margin-left: 2em;
+}
+
+.badge-info p {
+  font-size: 0.9rem;
+  font-weight: 200;
+  max-width: 25em;
+}
+
+.badge-icon {
+  height: 3.5em;
+  width: 3.5em;
+  padding: 0.5em;
+  border-radius: 6px;
+
+  background: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+
+  color: #fff;
+}
+
+.badge-icon img {
+  height: 100%;
+  width: auto;
+}
+
+.product-details-card .card-wrapper {
+  /* border: 1px solid red; */
+  margin-right: 5em;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(to left, #ffada4, #a3c7f4);
+}
+
+.card-image {
+  /* margin-bottom: 1em; */
+  padding: 1em;
+  background: linear-gradient(
+    to left,
+    var(--primary-color-light),
+    var(--secondary-color-light)
+  );
+}
+
+.card-image img {
+  width: 25em;
+}
+
+.card-info {
+  padding: 1em;
+  background: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.card-info h1 {
+  letter-spacing: 5px;
+}
+
+.card-info h3 span {
+  color: #0d0d0d;
+  text-decoration: line-through;
+}
+
+.card-info-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info-price .icon {
+  border-radius: 6px;
+  padding: 0.3em;
+  padding-bottom: 0;
+  background-color: #fff;
+
+  color: var(--primary-color);
+}
+
+/* -------------------------- MEDIA QUERIES -------------------------- */
+
+@media (max-width: 1200px) {
+    
+  .product-details-container {
+    flex-direction: column;
+  }
+
+  .product-details-info {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 1100px) {
+    .product-details-card .card-wrapper {
+        margin: 0;
+    }
+    
+  .card-image img {
+      width: 18em;
+    }
+    
+    .card-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .product-details-info .heading {
+        font-size: 3.5rem;
+    }
+    .product-details-info .description {
+        font-size: .9rem;
+    }
+}
+
+
+
+
+

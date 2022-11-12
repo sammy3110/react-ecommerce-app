@@ -3,6 +3,8 @@ import { Layout } from "./components/styled-components/Layout";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import PopularProducts from "./components/PopularProducts";
+import AboutUs from "./components/AboutUs";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Navbar/>
         <Hero/>
         <PopularProducts/>
+        <AboutUs/>
+        <ProductDetails/>
       </Layout>
     </div>
   );

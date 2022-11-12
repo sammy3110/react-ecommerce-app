@@ -18,7 +18,7 @@ const Hero = () => {
             Summer Collections <span>2022</span>
           </Heading>
           <div className="hero-side">
-            <Description>
+            <Description maxWidth="25em">
               The styles of shoe available to consumers are endless and profit
               too
             </Description>
@@ -54,7 +54,7 @@ const Hero = () => {
 
       <div className="hero-banner">
         <div className="hero-nike">
-          <img src="images/poster1.png" alt="nike-shoe" />
+          <img src="images/poster.png" alt="nike-shoe" />
           <h1>NIKE</h1>
         </div>
         <div className="hero-glass">
