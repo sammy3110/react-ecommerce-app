@@ -1,0 +1,15 @@
+
+.product-item-container {
+    border: 2px solid magenta;
+    max-width: 20em;
+}
+
+.product-item-image img {
+    background: linear-gradient(to right, var(--secondary-color-light), var(--primary-color-light));
+    width: 20em;
+    height: auto;
+}
+
+.info-rating, .info-price {
+    display: flex;
+}
