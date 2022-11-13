@@ -1,7 +1,7 @@
 
 # `Modern Ecommerce Web-App`
 
-Modern-designed **NIKE ecommerce web-app** 🍕 built with **React**.
+Modern-designed **NIKE ecommerce web-app** built with **React**.
 
 Design credits:
 [**Creative Peoples**](https://creativepeoplesdesign.com/)
@@ -13,7 +13,7 @@ Design credits:
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aa7537e1-04cb-425d-96b6-750138d6859d/deploy-status)](https://app.netlify.com/sites/shyams-nike/deploys)
 
-Let's shop at [Nike ~ by Shyam !](https://shyams-nike.netlify.app/) 🍔
+Let's shop at [Nike ~ by Shyam !](https://shyams-nike.netlify.app/) 👟
 ## `Screenshots`
 
 ![Home](https://github.com/sammy3110/react-ecommerce-app/blob/main/public/images/screenshots/screenshot1.JPG)
