@@ -31,7 +31,7 @@ nav {
 }
 
 .navbar-container a:hover {
-  color: var(--primary-color-light);
+  color: var(--primary-color);
 }
 
 .navbar-side {
@@ -45,7 +45,7 @@ nav {
 
 .navbar-side .icon:hover {
   cursor: pointer;
-  color: var(--primary-color-light);
+  color: var(--primary-color);
 }
 
 /* -------------------- MEDIA QUERIES -------------------- */
